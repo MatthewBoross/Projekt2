@@ -1,0 +1,52 @@
+#cim{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 5px
+}
+
+#alcim{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    text-align: center
+}
+
+#foresz{
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+.hr{
+    clear: both;
+}
+
+.p{
+    font-size: 16px;
+    text-align: justify
+}
+
+#kezdop{
+    font-size: 20px;
+}
+
+.mellcim{
+    font-size: 23px;
+}
+
+.image{
+    max-width: 50%;
+    height: auto;
+    float: right;
+    padding: 2px;
+    border: 2px solid green;
+    margin: 10px;
+}
+
+.forrasok{
+    margin-top: 30px;
+}
+
+.forras{
+    font-size: 18px;
+    margin-bottom: 2px;
+}

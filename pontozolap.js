@@ -1,0 +1,1 @@
+//Ide fog kerülni a pontozólap js-e.
