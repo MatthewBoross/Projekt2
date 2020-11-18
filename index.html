@@ -70,6 +70,43 @@
                 <p class="forras"><i><a href="https://users.iit.uni-miskolc.hu/~szabo60/2.jpg" target="_blank">Lézernyomtató képe</a></i></p>
                 <p class="forras"><i><a href="https://www.cdrmarket.cz/publicdoc/66361-1103044876-s-2.jpg" target="_blank">Tintasugaras nyomtató képe</a></i></p>
                 <p class="forras"><i><a href="https://p1.akcdn.net/full/485998031.hp-designjet-t1700-44in-w6b55a.jpg" target="_blank">Plotter képe</a></i></p>
+            
+            
+            </div>
+            <div class="container">
+                <h3 id="PontozolapH3">Pontozólap a 2020. évi informatika érettségire</h3>
+                <p class="p">Ide be tudod gépelni a 2020. évi informatika érettsédi eredményeidet. Kattints a gombra az eredményeid megtekintéséért.</p>
+                <form id="form" name="form">
+                    <h4 class="pontlalc">Írásbeli</h4>
+                    <label class="">Szövegszerkesztés (max. 40 pont): </label><input type="number" max="40" min="0" id="szovegsz"><br>
+                    <label class="">Prezentációkészítés (max. 30 pont): </label><input type="number" max="30" min="0" id="prez"><br>
+                    <label class="">Táblázatkezelés (max. 30 pont): </label><input type="number" max="30" min="0" id="tabla"><br>
+                    <label class="">Adatbázis-kezelés (max. 20 pont): </label><input type="number" max="20" min="0" id="adatb"><br>
+                    <h4 class="pontlalc">Szóbeli</h4>
+                    <label class="">Tartalom (max. 12 pont): </label><input type="number" max="12" min="0" id="tart"><br>
+                    <label class="">Felépítés (max. 6 pont): </label><input type="number" max="6" min="0" id="felep"><br>
+                    <label class="">Szaknyelv (max. 6 pont): </label><input type="number" max="6" min="0" id="szakny"><br>
+                    <label class="">Kommutatív képesség (max. 6 pont): </label><input type="number" max="6" min="0" id="komm"><br>
+                    <button class="button" onclick="szamol()">Számold ki az eredményem!</button>
+                </form>
+            </div>
+            <div class="container" id="eredmenyek">
+                <label class="">Összes szóbeli pontszám: </label>
+                <div id="szobeli">
+                
+                </div>
+                <label class="">Összes írásbeli pontszám: </label>
+                <div id="szobeli">
+                
+                </div>
+                <label class="">Összes pontszám: </label>
+                <div id="osszes">
+                
+                </div>
+                <label class="">Érdemjegy: </label>
+                <div id="jegy">
+                
+                </div>
             </div>
         </main>
         
