@@ -34,15 +34,27 @@
     font-size: 23px;
 }
 
-.image{
-    max-width: 50%;
-    height: auto;
-    float: right;
-    padding: 2px;
-    border: 2px solid green;
-    margin: 10px;
+@media screen and (min-width: 501px){
+    .image{
+        max-width: 50%;
+        height: auto;
+        float: right;
+        padding: 2px;
+        border: 2px solid green;
+        margin: 10px;
+    }
 }
 
+@media screen and (max-width: 500px){
+    .image{
+        width: 90%;
+        height: auto;
+        padding: 2px;
+        border: 2px solid green;
+        margin: 10px;
+    }
+}
+    
 .forrasok{
     margin-top: 30px;
 }
