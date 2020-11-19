@@ -8,12 +8,13 @@
     font-size: 25px;
     margin-top: 5px;
     margin-bottom: 50px;
-    text-align: center
+    text-align: center;
+    font-weight: 200;
 }
 
 #foresz{
     margin-top: 75px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .hr{
@@ -49,4 +50,43 @@
 .forras{
     font-size: 18px;
     margin-bottom: 2px;
+}
+
+#PontozolapH3{
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.pontlalc{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.bevitel{
+    font-size: 20px;
+}
+
+.button{
+    background-color: forestgreen;
+    color: antiquewhite;
+    border: 0;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.eredmeny{
+    font-size: 17px;
+    font-style: italic;
+}
+
+#pontozolap{
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+#eredmenyek{
+    margin: 20px;
+    margin-top: 0;
+    visibility: collapse;
 }

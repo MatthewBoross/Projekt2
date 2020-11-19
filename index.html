@@ -70,40 +70,46 @@
                 <p class="forras"><i><a href="https://users.iit.uni-miskolc.hu/~szabo60/2.jpg" target="_blank">Lézernyomtató képe</a></i></p>
                 <p class="forras"><i><a href="https://www.cdrmarket.cz/publicdoc/66361-1103044876-s-2.jpg" target="_blank">Tintasugaras nyomtató képe</a></i></p>
                 <p class="forras"><i><a href="https://p1.akcdn.net/full/485998031.hp-designjet-t1700-44in-w6b55a.jpg" target="_blank">Plotter képe</a></i></p>
+                <p class="forras"><i><a href="https://eduline.hu/erettsegi_felveteli/20190516_informatikaerettsegi_pontszamitas" target="_blank">Eduline.hu</a> a pontozáshoz</i></p>
+                <p class="forras"><i><a href="https://eduline.hu/erettsegi_felveteli/20200429_szazalekok_emelt_es_kozep_szintu_erettsegin" target="_blank">Eduline.hu</a> a százalékozáshoz</i></p>
             
             
             </div>
-            <div class="container">
+            <div class="container" id="pontozolap">
                 <h3 id="PontozolapH3">Pontozólap a 2020. évi informatika érettségire</h3>
                 <p class="p">Ide be tudod gépelni a 2020. évi informatika érettsédi eredményeidet. Kattints a gombra az eredményeid megtekintéséért.</p>
                 <form id="form" name="form">
                     <h4 class="pontlalc">Írásbeli</h4>
-                    <label class="">Szövegszerkesztés (max. 40 pont): </label><input type="number" max="40" min="0" id="szovegsz"><br>
-                    <label class="">Prezentációkészítés (max. 30 pont): </label><input type="number" max="30" min="0" id="prez"><br>
-                    <label class="">Táblázatkezelés (max. 30 pont): </label><input type="number" max="30" min="0" id="tabla"><br>
-                    <label class="">Adatbázis-kezelés (max. 20 pont): </label><input type="number" max="20" min="0" id="adatb"><br>
+                    <label class="bevitel">Szövegszerkesztés (max. 40 pont): </label><input type="number" max="40" min="0" id="szovegsz" name="szovegsz" required placeholder="0"><br>
+                    <label class="bevitel">Prezentációkészítés (max. 30 pont): </label><input type="number" max="30" min="0" id="prez" name="prez" required placeholder="0"><br>
+                    <label class="bevitel">Táblázatkezelés (max. 30 pont): </label><input type="number" max="30" min="0" id="tabla" name="tabla" required placeholder="0"><br>
+                    <label class="bevitel">Adatbázis-kezelés (max. 20 pont): </label><input type="number" max="20" min="0" id="adatb" name="adatb" required placeholder="0"><br>
                     <h4 class="pontlalc">Szóbeli</h4>
-                    <label class="">Tartalom (max. 12 pont): </label><input type="number" max="12" min="0" id="tart"><br>
-                    <label class="">Felépítés (max. 6 pont): </label><input type="number" max="6" min="0" id="felep"><br>
-                    <label class="">Szaknyelv (max. 6 pont): </label><input type="number" max="6" min="0" id="szakny"><br>
-                    <label class="">Kommutatív képesség (max. 6 pont): </label><input type="number" max="6" min="0" id="komm"><br>
-                    <button class="button" onclick="szamol()">Számold ki az eredményem!</button>
+                    <label class="bevitel">Tartalom (max. 12 pont): </label><input type="number" max="12" min="0" id="tart" name="tart" required placeholder="0"><br>
+                    <label class="bevitel">Felépítés (max. 6 pont): </label><input type="number" max="6" min="0" id="felep" name="felep" required placeholder="0"><br>
+                    <label class="bevitel">Szaknyelv (max. 6 pont): </label><input type="number" max="6" min="0" id="szakny" name="szakny" required placeholder="0"><br>
+                    <label class="bevitel">Kommutatív képesség (max. 6 pont): </label><input type="number" max="6" min="0" id="komm" name="komm" required placeholder="0"><br>
+                    <button type="submit" class="button" onclick="szamol()">Számold ki az eredményem!</button>
                 </form>
             </div>
             <div class="container" id="eredmenyek">
-                <label class="">Összes szóbeli pontszám: </label>
+                <label class="eredmeny">Összes szóbeli pontszám: </label>
                 <div id="szobeli">
                 
                 </div>
-                <label class="">Összes írásbeli pontszám: </label>
-                <div id="szobeli">
+                <label class="eredmeny">Összes írásbeli pontszám: </label>
+                <div id="irasbeli">
                 
                 </div>
-                <label class="">Összes pontszám: </label>
+                <label class="eredmeny">Összes pontszám: </label>
                 <div id="osszes">
                 
                 </div>
-                <label class="">Érdemjegy: </label>
+                <label class="eredmeny">Százalék: </label>
+                <div id="szaz">
+                
+                </div>
+                <label class="eredmeny">Érdemjegy: </label>
                 <div id="jegy">
                 
                 </div>
@@ -111,6 +117,7 @@
         </main>
         
         
+        <script src="pontozolap.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
