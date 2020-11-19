@@ -81,12 +81,10 @@
 }
 
 #pontozolap{
-    margin: 20px;
     margin-bottom: 0;
 }
 
 #eredmenyek{
-    margin: 20px;
     margin-top: 0;
-    visibility: collapse;
+    margin-bottom: 20px;
 }

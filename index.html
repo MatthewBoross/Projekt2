@@ -11,8 +11,8 @@
     
     <body>
         <main>
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                <a class="navbar-brand">Menü</a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand">Navigációs menü</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,6 +32,12 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Plotter">Plotterek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#forr">Források</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pontozolap">Pontozólap</a>
                         </li>
                     </ul>
                 </div>
@@ -64,21 +70,21 @@
                 <p class="p">A papíron való megjelenítés speciális eszköze a plotter vagy rajzgép. Arra használatos, hogy a számítógépen készült rajzokat kinyomtassuk. Általában speciális filctollakkal, tuskihúzókkal, újabban tintasugaras patronokkal dolgozik. Különböző méretekben készül, a kisebb méretűek lapos felületen rajzolnak, a nagyobbak (egészen A0 méretig) ún. dobplotter kivitelűek.</p>
 
             
-                <h3 class="forrasok"><i><b>Források:</b></i></h3>
+                <h3 class="forrasok" id="forr"><i><b>Források:</b></i></h3>
                 <p class="forras"><i><a href="https://erettsegi.com/tetelek/informatika/nyomtatok/" target="_blank">Érettségi.com</a> a törzsanyaghoz</i></p>
                 <p class="forras"><i><a href="https://lh3.googleusercontent.com/proxy/vgSbWeHentsPm7PDuVhyiuN9tCoyl0dbCuSVcKiuYppkjI3eKibw-nhSUdfLCdSseU1lqn-ZsP_OfJoxK0vJSOzOTTWfVzbGvgk" target="_blank">Mátrixnyomtató képe</a></i></p>
                 <p class="forras"><i><a href="https://users.iit.uni-miskolc.hu/~szabo60/2.jpg" target="_blank">Lézernyomtató képe</a></i></p>
                 <p class="forras"><i><a href="https://www.cdrmarket.cz/publicdoc/66361-1103044876-s-2.jpg" target="_blank">Tintasugaras nyomtató képe</a></i></p>
                 <p class="forras"><i><a href="https://p1.akcdn.net/full/485998031.hp-designjet-t1700-44in-w6b55a.jpg" target="_blank">Plotter képe</a></i></p>
                 <p class="forras"><i><a href="https://eduline.hu/erettsegi_felveteli/20190516_informatikaerettsegi_pontszamitas" target="_blank">Eduline.hu</a> a pontozáshoz</i></p>
-                <p class="forras"><i><a href="https://eduline.hu/erettsegi_felveteli/20200429_szazalekok_emelt_es_kozep_szintu_erettsegin" target="_blank">Eduline.hu</a> a százalékozáshoz</i></p>
-            
-            
+                <p class="forras"><i><a href="https://eduline.hu/erettsegi_felveteli/20200429_szazalekok_emelt_es_kozep_szintu_erettsegin" target="_blank">Eduline.hu</a> a százalékszámításhozáshoz</i></p>
             </div>
+            
+            
             <div class="container" id="pontozolap">
                 <h3 id="PontozolapH3">Pontozólap a 2020. évi informatika érettségire</h3>
                 <p class="p">Ide be tudod gépelni a 2020. évi informatika érettsédi eredményeidet. Kattints a gombra az eredményeid megtekintéséért.</p>
-                <form id="form" name="form">
+                <form id="form" name="form" onsubmit="return false">
                     <h4 class="pontlalc">Írásbeli</h4>
                     <label class="bevitel">Szövegszerkesztés (max. 40 pont): </label><input type="number" max="40" min="0" id="szovegsz" name="szovegsz" required placeholder="0"><br>
                     <label class="bevitel">Prezentációkészítés (max. 30 pont): </label><input type="number" max="30" min="0" id="prez" name="prez" required placeholder="0"><br>
@@ -92,27 +98,19 @@
                     <button type="submit" class="button" onclick="szamol()">Számold ki az eredményem!</button>
                 </form>
             </div>
+            
+            
             <div class="container" id="eredmenyek">
                 <label class="eredmeny">Összes szóbeli pontszám: </label>
-                <div id="szobeli">
-                
-                </div>
+                <label id="szobeli"></label><br>
                 <label class="eredmeny">Összes írásbeli pontszám: </label>
-                <div id="irasbeli">
-                
-                </div>
+                <label id="irasbeli"></label><br>
                 <label class="eredmeny">Összes pontszám: </label>
-                <div id="osszes">
-                
-                </div>
+                <label id="osszes"></label><br>
                 <label class="eredmeny">Százalék: </label>
-                <div id="szaz">
-                
-                </div>
+                <label id="szaz"></label><br>
                 <label class="eredmeny">Érdemjegy: </label>
-                <div id="jegy">
-                
-                </div>
+                <label id="jegy"></label><br>
             </div>
         </main>
         
