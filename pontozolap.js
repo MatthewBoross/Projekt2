@@ -15,7 +15,7 @@ function szamol(){
     var ossz = osszsz+osszir;
     document.getElementById('osszes').innerHTML = ossz + " pont";
     var szazalek = (100*ossz)/150;
-    document.getElementById('szaz').innerHTML = szazalek + "%";
+    document.getElementById('szaz').innerHTML = szazalek.toFixed(2) + "%";
     var erdemjegy = 0;
     var idezet = [", Ha ezt látod, akkor a program hibásan futott le.", ", Elégtelen. Nyugi, van még pótérettségi.", ", Elégséges. Átmentél, nincs baj.", ", Közepes. Lehetne jobb is, de nem rossz!", ", Jó. Nagyszerű!", ", Kitűnő. Ez aztán szép munka volt!"];
     
