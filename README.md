@@ -1,2 +1,2 @@
 # Projekt2
-Ez a második projektnek a repo-ja.
+Ez a második projekt repo-ja.
